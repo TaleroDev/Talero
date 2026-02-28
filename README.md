@@ -1,37 +1,37 @@
 # Talero
 
-Talero Network is a hybrid PoW/PoS EVM chain built for validators, stakers, and builders.
+Talero Network est une chaine EVM hybride PoW/PoS conçue pour les validateurs, stakers et builders.
 
-## What Is Already Implemented
+## Etat actuel
 
-- Public repository initialized
-- CPU miner distributable package (Linux x86_64)
-- GitHub Release for direct download
-- SHA256 checksum published with the release asset
+- Dépôt public initialisé
+- Package CPU miner distribuable (Linux x86_64)
+- Release GitHub disponible en téléchargement direct
+- Checksum SHA256 publié avec les artefacts
 
-## CPU Miner Release
+## Release CPU Miner
 
-Latest CPU miner release:
+Dernière release CPU miner:
 
-- https://github.com/TaleroDev/Talero/releases/tag/v0.1.0-cpu-miner-linux-x86_64
+- https://github.com/TaleroDev/Talero/releases/latest
 
-Assets:
+Artefacts:
 
-- `talero-cpu-miner-linux-x86_64.tar.gz`
-- `talero-cpu-miner-linux-x86_64.tar.gz.sha256`
+- `talero-cpu-miner-linux-x86_64.zip`
+- `talero-cpu-miner-linux-x86_64.zip.sha256`
 
-## Quick Start (Miner)
+## Démarrage rapide (Miner)
 
 ```bash
-tar -xzf talero-cpu-miner-linux-x86_64.tar.gz
+unzip talero-cpu-miner-linux-x86_64.zip
 cd talero-cpu-miner-linux-x86_64
-sha256sum -c talero-cpu-miner-linux-x86_64.tar.gz.sha256
+sha256sum -c ../talero-cpu-miner-linux-x86_64.zip.sha256
 cp .env.example .env
-# edit .env (WALLET and WORKER)
-./start_miner.sh
+# éditer .env (WALLET et WORKER)
+./START.sh
 ```
 
 ## Notes
 
-- The miner package contains runtime files only (binary, env example, launcher script, install guide).
-- Source code is intentionally not bundled in the distributable archive.
+- Le package miner contient uniquement les fichiers runtime (binaire, exemple `.env`, script de lancement, guide).
+- Le code source n'est volontairement pas embarqué dans l'archive distribuée.
