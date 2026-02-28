@@ -1,6 +1,6 @@
 # Talero CPU Miner - Linux x86_64
 
-Fichiers:
+Files:
 - `talero-cpu-miner-linux-x86_64.zip`
 - `talero-cpu-miner-linux-x86_64.zip.sha256`
 
@@ -9,11 +9,11 @@ Verification:
 sha256sum -c talero-cpu-miner-linux-x86_64.zip.sha256
 ```
 
-Installation / lancement:
+Install / run:
 ```bash
 unzip talero-cpu-miner-linux-x86_64.zip
 cd talero-cpu-miner-linux-x86_64
 cp .env.example .env
-# éditer .env: WALLET + WORKER
+# edit .env: WALLET + WORKER
 ./START.sh
 ```
